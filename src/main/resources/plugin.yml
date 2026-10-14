@@ -1,0 +1,26 @@
+name: Pollinations
+version: 1.0.0
+main: dev.sugamdeol.pollinations.PollinationsPlugin
+api-version: '1.21'
+description: Pollinations AI for Minecraft servers - AI chat, persona NPCs and text-to-image map art.
+author: Sugamdeol
+website: https://pollinations.ai
+
+commands:
+  poll:
+    description: Pollinations AI commands
+    usage: |
+      /poll chat <message> - talk to the AI
+      /poll npc <persona> <message> - talk to a persona NPC
+      /poll image <prompt> - generate an image on a map
+      /poll clear - clear your chat history
+      /poll about - plugin info
+    permission: pollinations.use
+
+permissions:
+  pollinations.use:
+    description: Allows using Pollinations commands
+    default: true
+  pollinations.admin:
+    description: Allows setting the API key in-game
+    default: op

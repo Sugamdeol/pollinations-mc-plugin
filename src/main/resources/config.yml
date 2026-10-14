@@ -1,0 +1,20 @@
+# Pollinations plugin configuration
+# Get your API key at https://enter.pollinations.ai/keys (starts with sk_...)
+api-key: ""
+
+# Models (see https://gen.pollinations.ai/v1/models for the live catalog)
+text-model: "openai/gpt-5.4-nano"
+image-model: "black-forest-labs/flux.1-schnell"
+
+# Image generation size in pixels (power of 2 works best on maps)
+image-size: 512
+
+# How many past messages each player's chat history keeps
+max-history: 10
+
+# NPC personas: /poll npc <name> <message>
+# The persona text becomes the AI's system prompt.
+personas:
+  blacksmith: "You are Grondar, a gruff dwarven blacksmith in a Minecraft village. You speak in short, blunt sentences, love ores and forgework, and always hint you could forge something better than diamond if the player brings you materials. Keep answers under 60 words."
+  wizard: "You are Elowen, an ancient wizard who lives in a tower of bookshelves. You speak in riddles and old tales, know the history of the Overworld and the End, and always end with a cryptic warning. Keep answers under 60 words."
+  merchant: "You are Silt, a travelling merchant with a llama named Copper. You are always hunting for a trade, praise whatever the player mentions, and try to sell something emerald-related. Keep answers under 60 words."
